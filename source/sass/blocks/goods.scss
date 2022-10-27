@@ -1,0 +1,28 @@
+.goods__list {
+  border-left: 1px solid $dark-color-type-8;
+  padding-left: 8px;
+}
+
+.goods__item {
+  margin-bottom: 14px;
+
+  @media (min-width: $min-desktop-width) {
+    margin-bottom: 18px;
+  }
+}
+
+.goods__item:last-child {
+  margin-bottom: 0;
+}
+
+.goods__item a {
+  width: auto;
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 0;
+  padding: 0 8px;
+
+  @media (min-width: $min-desktop-width) {
+    padding: 0 0 0 8px;
+  }
+}

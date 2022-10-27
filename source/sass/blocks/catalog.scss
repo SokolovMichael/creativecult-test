@@ -1,0 +1,97 @@
+.catalog {
+  background: $dark-color-type-3;
+  background-image: url("../img/background/catalog/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 555px;
+  padding: 160px 16px 48px;
+  box-sizing: border-box;
+  margin-bottom: 45px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/catalog/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $min-desktop-width) {
+    min-height: 510px;
+    background-image: url("../img/background/catalog/back.jpg");
+    padding: 160px 30px 48px;
+    margin-bottom: 64px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/catalog/back@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 160px 0 48px;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
+
+.catalog__text-wrapper {
+  background: $dark-color-type-9;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  width: 288px;
+  margin: 0 auto;
+
+  @media (min-width: $min-desktop-width) {
+    margin: 0;
+    padding: 40px;
+    width: 472px;
+  }
+}
+
+.catalog__text-wrapper h2 {
+  font-size: 27px;
+  line-height: 31px;
+  font-weight: 600;
+  color: $dark-color-type-3;
+  margin-bottom: 16px;
+
+  @media (min-width: $min-desktop-width) {
+    font-size: 29px;
+    line-height: 34px;
+  }
+}
+
+.catalog__text-wrapper p {
+  font-size: 15px;
+  line-height: 26px;
+  color: $dark-color-type-7;
+  margin-bottom: 40px;
+}
+
+.catalog__text-wrapper button {
+  display: block;
+  cursor: pointer;
+  background-color: $dark-color-type-3;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  color: $base-light-color;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 12px;
+  border-radius: 2px;
+
+  @media (min-width: $min-desktop-width) {
+    width: 219px;
+  }
+}
+
+.catalog__text-wrapper button:hover {
+  opacity: 0.6;
+}
+
+.catalog__text-wrapper button:active {
+  opacity: 1;
+}

@@ -1,0 +1,19 @@
+.menu__item {
+  margin-bottom: 10px;
+}
+
+.menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.menu__item a {
+  color: $base-dark-color;
+}
+
+.menu__item:hover a {
+  opacity: 0.2;
+}
+
+.menu__item:active a {
+  opacity: 1;
+}

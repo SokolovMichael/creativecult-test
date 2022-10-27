@@ -1,0 +1,231 @@
+.links {
+  @media (min-width: $min-desktop-width) {
+    border-bottom: 1px solid $dark-color-type-14;
+    margin-bottom: 85px;
+    padding-bottom: 90px;
+  }
+}
+
+.links__wrapper {
+  @media (min-width: $min-desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr calc(200 / 1440 * 100vw) calc(136 / 1440 * 100vw);
+    grid-gap: calc(70 / 1440 * 100vw) calc(162 / 1440 * 100vw);
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 200px 136px;
+    grid-gap: 23px 162px;
+    padding: 0;
+  }
+}
+
+.links__button {
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  color: $base-light-color;
+  padding: 10px 0 11px;
+  font-size: 17px;
+  line-height: 26px;
+  border-bottom: 1px solid $dark-color-type-14;
+
+  @media (min-width: $min-desktop-width) {
+    display: none;
+  }
+}
+
+.links button:hover {
+  opacity: 0.6;
+}
+
+.links button:active {
+  opacity: 1;
+}
+
+.links--nojs .links__button {
+  pointer-events: none;
+  border-bottom: none;
+}
+
+.links--opened .links__button {
+  border-bottom: none;
+}
+
+.links__button-icon {
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(90deg);
+  fill: $dark-color-type-12;
+  width: 10px;
+  height: 14px;
+}
+
+.links__list-wrapper {
+  display: none;
+
+  @media (min-width: $min-desktop-width) {
+    display: flex;
+    position: relative;
+  }
+}
+
+.links__list-wrapper--products {
+  @media (min-width: $min-desktop-width) {
+    border-bottom: 1px solid $dark-color-type-14;
+    padding-bottom: 45px;
+  }
+}
+
+.links__list-wrapper--products h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.links__list-wrapper--support {
+  flex-direction: column;
+}
+
+.links__list-wrapper--support h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+}
+
+.links--closed .links__list-wrapper--products {
+  display: none;
+}
+
+.links--nojs .links__list-wrapper--products,
+.links--opened .links__list-wrapper--products {
+  display: block;
+}
+
+.links__list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: left;
+
+  @media (min-width: $min-desktop-width) {
+    width: calc(200 / 1440 * 100vw);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+}
+
+.links__list--mobile {
+  margin-bottom: 56px;
+
+  @media (min-width: $min-desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.links__list--desktop {
+  display: none;
+
+  @media (min-width: $min-desktop-width) {
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.links--opened .links__list {
+  margin-bottom: 14px;
+}
+
+.links--closed .links__list-wrapper--products,
+.links--opened .links__list-wrapper--products,
+.links__list--desktop {
+  @media (min-width: $min-desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.links__item {
+  border-bottom: 1px solid $dark-color-type-14;
+
+  @media (min-width: $min-desktop-width) {
+    border-bottom: none;
+    margin-bottom: 23px;
+  }
+}
+
+.links__item--support {
+  @media (min-width: $min-desktop-width) {
+    display: none;
+  }
+}
+
+.links__item a {
+  padding: 12px 12px 11px 0;
+  color: $base-light-color;
+  line-height: 26px;
+  font-weight: 600;
+  box-sizing: border-box;
+
+  @media (min-width: $min-desktop-width) {
+    font-size: 18px;
+    line-height: 28px;
+
+    padding: 0;
+  }
+}
+
+.links__item:hover a {
+  opacity: 0.6;
+}
+
+.links__item:active a {
+  opacity: 1;
+}
+
+.links__item:last-child,
+.links__list--desktop .links__item {
+  margin-bottom: 0;
+}
+
+.links__list--desktop .links__item {
+  @media (min-width: $min-desktop-width) {
+    margin-right: calc(40 / 1440 * 100vw);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 145px;
+  }
+}
+
+.links__list--desktop .links__item:last-child {
+  margin-right: 0;
+}
+
+.links__list--desktop .links__item a {
+  font-size: 14px;
+  line-height: 22px;
+  color: $light-color-type-3;
+  font-weight: 400;
+}

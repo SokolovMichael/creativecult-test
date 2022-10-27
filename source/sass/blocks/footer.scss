@@ -1,0 +1,12 @@
+.footer {
+  background: $dark-color-type-3;
+  color: $base-light-color;
+  padding: 22px 16px 33px;
+  box-sizing: border-box;
+  text-align: center;
+
+  @media (min-width: $min-desktop-width) {
+    padding: 70px 0;
+    text-align: left;
+  }
+}

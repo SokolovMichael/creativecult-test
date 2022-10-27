@@ -1,0 +1,123 @@
+.equipment {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 24px;
+
+  @media (min-width: $min-desktop-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.equipment::before {
+  content: "";
+  position: absolute;
+  background: $dark-color-type-9;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 398px;
+  z-index: -1;
+
+  @media (min-width: $min-desktop-width) {
+    height: 467px;
+  }
+}
+
+.equipment__picture {
+  display: block;
+  min-width: 288px;
+  min-height: 230px;
+  width: calc(288 / 320 * 100vw);
+  height: calc(230 / 320 * 100vw);
+  margin: 0 auto 33px;
+
+  @media (min-width: $min-desktop-width) {
+    width: calc(384 / 1440 * 100vw);
+    height: calc(308 / 1440 * 100vw);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
+    height: 308px;
+  }
+}
+
+.equipment__text {
+  padding: 0 16px;
+  box-sizing: border-box;
+
+  @media (min-width: $min-desktop-width) {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 232px;
+  }
+}
+
+.equipment__text-wrapper {
+  margin-bottom: 40px;
+
+  @media (min-width: $min-desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.equipment__text-wrapper h4 {
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 600;
+  margin-bottom: 16px;
+
+  @media (min-width: $min-desktop-width) {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+.equipment__text-wrapper p {
+  color: $dark-color-type-7;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.equipment__text a {
+  color: $base-light-color;
+  background: $dark-color-type-3;
+  text-align: center;
+  width: 256px;
+  margin: 0 auto;
+  font-size: 15px;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  @media (min-width: $min-desktop-width) {
+    display: inline-block;
+    width: auto;
+    padding: 12px 32px;
+    margin-left: 0;
+  }
+}
+
+.equipment__text a:hover {
+  opacity: 0.6;
+}
+
+.equipment__text a:active {
+  opacity: 1;
+}
+
+.equipment__text a span:first-child {
+  @media (min-width: $min-desktop-width) {
+    display: none;
+  }
+}
+
+.equipment__text a span:last-child {
+  display: none;
+
+  @media (min-width: $min-desktop-width) {
+    display: block;
+  }
+}

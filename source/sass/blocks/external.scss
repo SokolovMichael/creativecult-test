@@ -1,0 +1,55 @@
+.external {
+  display: inline-flex;
+  margin-bottom: 35px;
+
+  @media (min-width: $min-desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.external__item {
+  margin-right: 8px;
+}
+
+.external__item:last-child {
+  margin-right: 0;
+}
+
+.external__item:hover {
+  opacity: 0.6;
+}
+
+.external__item:active {
+  opacity: 1;
+}
+
+.external__item a {
+  padding: 20px;
+  position: relative;
+}
+
+.external__item-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 24px;
+}
+
+.external__item-logo--vk {
+  height: 15px;
+}
+
+.external__item-logo--telegram {
+  height: 20px;
+}
+
+.external__item-logo--youtabe {
+  height: 18px;
+}
+
+.external__item-logo--pinterest {
+  height: 24px;
+}
